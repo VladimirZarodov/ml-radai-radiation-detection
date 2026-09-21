@@ -1,0 +1,4 @@
+.venv
+radai
+*.h5
+*.hdf5
