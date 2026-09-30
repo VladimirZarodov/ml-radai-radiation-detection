@@ -1,0 +1,16 @@
+encounters: VAL n=45  TEST n=943
+
+Доля группы encounters:
+  bg-confounded   VAL  68.9%  (31)   TEST  80.3%  (757)
+  shape-dist.     VAL  31.1%  (14)   TEST  19.7%  (186)
+
+recall по группам при тех же thr (протокол A):
+  @FAR 1 thr= 5.19:  VAL all  15.6%  TEST all  24.1%  | bg-conf: VAL  16.1 TEST  22.2  | shape: VAL  14.3 TEST  31.7
+        decomposition: gap  -8.5 pt = composition  +1.1 + within-group  -9.6
+        val snr: bg-conf med 8.6 vs test 8.2; shape VAL 5.0 vs TEST 5.5
+  @FAR 3 thr= 4.49:  VAL all  31.1%  TEST all  38.5%  | bg-conf: VAL  35.5 TEST  35.9  | shape: VAL  21.4 TEST  48.9
+        decomposition: gap  -7.4 pt = composition  +1.5 + within-group  -8.9
+        val snr: bg-conf med 8.6 vs test 8.2; shape VAL 5.0 vs TEST 5.5
+  @FAR10 thr= 3.61:  VAL all  66.7%  TEST all  69.6%  | bg-conf: VAL  67.7 TEST  68.0  | shape: VAL  64.3 TEST  75.8
+        decomposition: gap  -2.9 pt = composition  +0.9 + within-group  -3.8
+        val snr: bg-conf med 8.6 vs test 8.2; shape VAL 5.0 vs TEST 5.5

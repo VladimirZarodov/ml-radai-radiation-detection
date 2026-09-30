@@ -1,0 +1,27 @@
+﻿windows built in 227s
+train (32538, 256) 16.0% pos | test pos 15.2%
+xgb best_iteration: 41
+
+=== window-level on TEST runs (2s windows, label: tagged counts>0) ===
+  model  roc_auc  pr_auc
+ LogReg   0.5701  0.1935
+XGBoost   0.5631  0.1881
+NN(MLP)   0.5421  0.1704
+
+=== ML baselines: encounter recall vs FAR/hr (non-overlapping 2s windows, TEST runs) ===
+  model  target_far  achieved_far  recall   n
+ LogReg           1         0.853   0.069 943
+ LogReg           3         2.804   0.175 943
+ LogReg          10        10.290   0.387 943
+ LogReg          30        30.358   0.609 943
+ LogReg          60        59.862   0.807 943
+XGBoost           1         1.390   0.099 943
+XGBoost           3         4.316   0.186 943
+XGBoost          10         9.632   0.277 943
+XGBoost          30        21.482   0.409 943
+XGBoost          60        34.698   0.507 943
+    CNN           1         1.244   0.047 943
+    CNN           3         3.194   0.129 943
+    CNN          10         9.168   0.317 943
+    CNN          30        31.333   0.652 943
+    CNN          60        62.520   0.837 943

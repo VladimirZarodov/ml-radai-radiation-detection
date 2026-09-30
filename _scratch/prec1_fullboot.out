@@ -1,0 +1,13 @@
+grid 133 pts | pool 50.2 h | train 7.0 h
+@FAR 1 A 7h  OLD-rule : recall 95% CI [ 20.4,  35.5] med  24.9 | achieved-FAR CI [ 0.34,  2.30]
+@FAR 1 A 7h  fixed    : recall 95% CI [ 20.4,  35.8] med  25.0 | achieved-FAR CI [ 0.34,  2.32]
+@FAR 1 B_loo 50h fixed: recall 95% CI [ 22.8,  28.6] med  25.8 | achieved-FAR CI [ 0.66,  1.40]
+        [A OLD-rule thr dist p2.5/50/97.5 = [4.63 5.19 5.39]]
+@FAR 3 A 7h  OLD-rule : recall 95% CI [ 24.7,  43.2] med  29.7 | achieved-FAR CI [ 0.79,  3.86]
+@FAR 3 A 7h  fixed    : recall 95% CI [ 32.2,  43.8] med  38.6 | achieved-FAR CI [ 1.83,  4.16]
+@FAR 3 B_loo 50h fixed: recall 95% CI [ 36.9,  43.5] med  39.9 | achieved-FAR CI [ 2.34,  3.49]
+        [A OLD-rule thr dist p2.5/50/97.5 = [4.28 4.9  5.06]]
+@FAR10 A 7h  OLD-rule : recall 95% CI [ 24.8,  70.7] med  29.7 | achieved-FAR CI [ 0.84,  9.93]
+@FAR10 A 7h  fixed    : recall 95% CI [ 59.2,  75.7] med  67.6 | achieved-FAR CI [ 6.91, 10.77]
+@FAR10 B_loo 50h fixed: recall 95% CI [ 67.2,  74.6] med  70.9 | achieved-FAR CI [ 8.81, 10.73]
+        [A OLD-rule thr dist p2.5/50/97.5 = [3.59 4.9  5.06]]

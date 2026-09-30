@@ -1,0 +1,37 @@
+thr@FAR1 medians: test 5.099  val 5.099  train 5.099
+
+encounter counts (ALL runs vs test only):
+  Co-60  : all n= 15 (14 runs)  test n= 12
+  Am-241 : all n= 37 (33 runs)  test n= 30
+
+=== sources/id -> source_names check on run25 ===
+sources/id: [22 45 58 39 16 57 47 16 51 32] -> names: Tl-201, HEU-10kg, WGPu-8kg, LEU-10kg, Th-232, WGPu-2kg, FGPu-0.5kg, Th-232, FGPu-2kg, RefinedU-2.5kg
+runs with Co-60/Am-241 encounters: 45
+direct-SNR slots computed: 48
+  run6 slot 17 (Am-241): snr60=0.7052073353021554 s=368 b=271941 snrfull=1.698415310034898 dur=20.505741999999827
+  run7 slot 18 (Am-241): snr60=7.19710248307748 s=4211 b=338127 snrfull=7.61400662288192 dur=107.31148599999995
+  run9 slot 17 (Am-241): snr60=0.7409377272639919 s=520 b=492022 snrfull=2.0493734793630978 dur=22.903728999999885
+  run11 slot 17 (Am-241): snr60=0.8804979151506155 s=498 b=319393 snrfull=2.4428793781895677 dur=29.677480999999943
+  run12 slot 18 (Am-241): snr60=4.320602365329283 s=2485 b=328314 snrfull=4.736341489552667 dur=97.26202599999999
+
+joined direct-SNR encounters: base    split
+Am-241  test     30
+        train     6
+        val       1
+Co-60   test     12
+        train     2
+        val       1
+dtype: int64
+corr peak vs direct: {'Am-241': 0.626, 'Co-60': 0.653}
+median peak / direct ratio: {'Am-241': 2.954, 'Co-60': 2.644}
+
+=== PD50 (SNR at 50% Pdet, B_loo thr @ FAR=1/hr) ===
+iso      split  metric       n    PD50 [95% CI]
+Co-60    test   snr_peak    12    2.85 [1.38,3.95]
+Co-60    test   snr_dir     12    0.71 [0.71,0.97]
+Co-60    all    snr_peak    15   14.74 [0.35,75.85]
+Co-60    all    snr_dir     15  259.73 [0.00,3244400.55]
+Am-241   test   snr_peak    30    0.31 [0.00,86916136.71]
+Am-241   test   snr_dir     30    0.32 [0.00,103231.87]
+Am-241   all    snr_peak    37 8254.39 [0.00,19335077.76]
+Am-241   all    snr_dir     37    0.00 [0.00,6372057773.20]
