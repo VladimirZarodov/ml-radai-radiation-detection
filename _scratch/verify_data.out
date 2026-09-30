@@ -1,0 +1,53 @@
+﻿== ROOT attrs ==
+  background_ids: [0 1 2 3 4 5 6 7]
+  background_names: ['Src' 'K-40' 'U' 'Th' 'Cs137_Soil' 'Pb-214' 'Bi-214' 'Cosmics']
+  format: 7
+  source_shielding_ids: [0 1 2 3 4 5 6 7]
+  source_shielding_names: ['None' '0.025cm_steel' '1cm_steel' '2cm_steel' '5cm_steel' '8cm_PMMA'
+ '1cm_Al' '2cm_Al']
+  source_names: ['BKG' 'K-40_shielding_id=0' 'K-40_shielding_id=2' 'Co-57_shielding_id=0'
+ 'Co-57_shielding_id=2' 'Co-60_shielding_id=0' 'Co-60_shielding_id=2'
+ 'Cs-137_shielding_id=0' 'Cs-137_shielding_id=2' 'Ba-133
+  source_ids: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
+ 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65
+
+== root keys == ['runs']
+n runs: 300 first: ['run0', 'run1', 'run2', 'run3', 'run4'] last: ['run297', 'run298', 'run299']
+
+== structure of run3 (one full run) ==
+[G] run3/detector  attrs={'lane': array([1], dtype=int64), 'street_name': 'Street11'}
+  [G] run3/detector/position  attrs={'acceleration_description': 'acceleration of detector (meters per second per second) at a 10Hz rate', 'distance_description': 'distance from beginning of run (meters) at a 10Hz rate', 'time_description': 'milliseconds from beginning of run at a 10Hz rate', 'velocity_description': 'velocity of detector (meters per second) at a 10Hz rate, in direction given by direction attribute'}
+    [D] run3/detector/position/acceleration  shape=(36191,) dtype=float32 attrs={}
+    [D] run3/detector/position/distance  shape=(36191,) dtype=float32 attrs={}
+    [D] run3/detector/position/time  shape=(36191,) dtype=uint32 attrs={}
+    [D] run3/detector/position/velocity  shape=(36191,) dtype=float32 attrs={}
+[G] run3/diagnostics  attrs={'gross_count_rate_variation_description': 'Windowed, rolling gross count rate variation metric, with a 15 second window and 1 second stride.', 'spectral_count_rate_variation_description': 'Windowed, rolling spectral variation metric, with a 15 second window and 1 second stride.', 'variation_timestamps_description': 'Timestamps correlating to variation metrics, in units of milliseconds.'}
+  [D] run3/diagnostics/gross_count_rate_variation  shape=(3604,) dtype=float32 attrs={}
+  [D] run3/diagnostics/spectral_count_rate_variation  shape=(3604,) dtype=float32 attrs={}
+  [D] run3/diagnostics/variation_timestamps  shape=(3604,) dtype=float32 attrs={}
+[G] run3/listmode  attrs={'background_id_description': 'background ID from which this photon originated, 0 is source', 'dt_description': 'elapsed time since last photon detection event (microseconds)', 'energy_description': 'energy of photon detection event (keV)', 'id_description': 'source ID from which this photon originated, 0 is background'}
+  [D] run3/listmode/background_id  shape=(9997544,) dtype=uint8 attrs={}
+  [D] run3/listmode/dt  shape=(9997544,) dtype=uint16 attrs={}
+  [D] run3/listmode/energy  shape=(9997544,) dtype=float32 attrs={}
+  [D] run3/listmode/id  shape=(9997544,) dtype=uint16 attrs={}
+[G] run3/sources  attrs={'distance_description': 'distance to closest approach from beginning of run (meters)', 'id_description': 'unique integer label of source', 'location_id_description': 'unique integer label of source location', 'shielding': 'shielding ID corresponding to top-level attribute source_shielding_ids with names/labels given in source_shielding_names', 'standoff_description': 'standoff distance between source and detector in meters', 'time_description': 'elapsed milliseconds to time of closest approach'}
+  [D] run3/sources/activity  shape=(11,) dtype=float32 attrs={} val=[1.0102179e+03 9.6963720e+00 2.6210338e+07 1.3817271e-02 4.5637604e+01
+ 5.7381207e-01 2.1841713e+09 2.0341151e+09 4.2067101e+01 6.2317281e+00
+ 1.4565034e+09]
+  [D] run3/sources/distance  shape=(11,) dtype=float32 attrs={} val=[ 2106.1995  3574.6055  4048.0332  5822.0913  7745.886   8208.43
+  8990.201  10497.413  11454.457  12234.717  15684.468 ]
+  [D] run3/sources/id  shape=(11,) dtype=uint16 attrs={} val=[67 28 15 48 39 51  2 61 56 56  2]
+  [D] run3/sources/location_id  shape=(11,) dtype=uint16 attrs={} val=[0 0 0 0 2 0 0 0 0 0 1]
+  [D] run3/sources/shielding  shape=(11,) dtype=uint16 attrs={} val=[0 2 0 0 2 2 2 6 2 2 2]
+  [G] run3/sources/snr  attrs={'integral_description': 'Deprecated - same as peak', 'peak_description': 'SNR at peak of encounter'}
+    [D] run3/sources/snr/integral  shape=(11,) dtype=float32 attrs={} val=[ 8.666945   9.515527  17.09315    2.6348882  9.011912   8.453517
+  6.7141695  8.888925   7.8157563  6.324858  10.621509 ]
+    [D] run3/sources/snr/peak  shape=(11,) dtype=float32 attrs={} val=[ 8.666945   9.515527  17.09315    2.6348882  9.011912   8.453517
+  6.7141695  8.888925   7.8157563  6.324858  10.621509 ]
+  [D] run3/sources/standoff  shape=(11,) dtype=float32 attrs={} val=[ 45.72   -30.48    11.2776 -15.24   -10.668    7.3152  30.48     5.9436
+  30.48   -15.24   -24.384 ]
+  [D] run3/sources/time  shape=(11,) dtype=uint32 attrs={} val=[ 527409  864515  936916 1323223 1737830 1824831 2035435 2354441 2627545
+ 2778448 3518161]
+
+== run3 attrs == {'end_timestamp': 3619.063243, 'seed': 105834060, 'start_timestamp': 0.0}

@@ -1,4 +1,15 @@
-.venv
-radai
+# --- data & regenerable artifacts (the notebook rebuilds all of these from the .h5) ---
+training_v4.3.h5
 *.h5
 *.hdf5
+radai/
+_scratch/*.pkl
+_scratch/*.log
+_scratch/*.hold
+_scratch/nb_outputs*.txt
+
+# --- python ---
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/

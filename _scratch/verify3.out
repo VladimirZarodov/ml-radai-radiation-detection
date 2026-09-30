@@ -1,0 +1,36 @@
+﻿built in 34s
+train (32538, 256) 16.0% pos | val (9036, 256) 14.0% pos
+val positives with snr>0: 100.0%
+xgb best_iteration: 24 best_score: 0.2243
+
+=== 1) plateau check (val = runs20-24) ===
+LogReg   ROC-AUC=0.6097  PR-AUC=0.1847
+XGBoost  ROC-AUC=0.6474  PR-AUC=0.2249
+
+=== 2) recall at realistic FAR (XGBoost) ===
+LogReg FAR1: thr=0.807 recall=0.2% | FAR5: thr=0.749 recall=0.5% | FAR15: thr=0.706 recall=1.6% | FAR30: thr=0.680 recall=3.2% | FAR60: thr=0.655 recall=5.1%
+XGBoost FAR1: thr=0.595 recall=0.0% | FAR5: thr=0.588 recall=0.7% | FAR15: thr=0.583 recall=1.8% | FAR30: thr=0.579 recall=4.0% | FAR60: thr=0.571 recall=8.5%
+
+=== 3) recall by SNR strata vs by raw count strata (XGBoost @ FAR=15/h) ===
+by raw tagged counts:
+        1-4: n=  502 recall=  1.4%
+        5-9: n=  165 recall=  1.8%
+      10-19: n=  136 recall=  0.7%
+      20-49: n=  158 recall=  1.3%
+      50-99: n=   82 recall=  3.7%
+    100-199: n=   64 recall=  3.1%
+       200+: n=  156 recall=  3.2%
+by encounter SNR (only positive windows that have a tag):
+         <4: n=  183 recall=  2.7%
+        4-6: n=  180 recall=  0.6%
+        6-8: n=  265 recall=  1.1%
+       8-10: n=  423 recall=  2.4%
+      10-13: n=   49 recall=  2.0%
+        13+: n=  163 recall=  1.8%
+
+=== 4) background spectrum: rate scaling vs shape change (runs 0,20,21, positive-free bg windows) ===
+  set0: bg rate mean=   5159 std=  2271 | variance of bg spectra explained by rate-scaled global shape: 0.971
+  set1: bg rate mean=   5599 std=  2224 | variance of bg spectra explained by rate-scaled global shape: 0.974
+  set2: bg rate mean=   5167 std=  1759 | variance of bg spectra explained by rate-scaled global shape: 0.969
+  set3: bg rate mean=   6028 std=  2840 | variance of bg spectra explained by rate-scaled global shape: 0.978
+  set4: bg rate mean=   5802 std=  2825 | variance of bg spectra explained by rate-scaled global shape: 0.976

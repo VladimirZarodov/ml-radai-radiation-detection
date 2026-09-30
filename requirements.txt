@@ -1,0 +1,19 @@
+# Exact versions used for all results in this repo (Python 3.11.2, Windows).
+# pip install -r requirements.txt
+#
+# Some findings are version-sensitive (e.g. XGBoost early-stopping behaviour,
+# sklearn MLP/LogReg determinism used in the §3.5 hybrid fallback), so the
+# pinned versions below are what reproduce the notebook outputs bit-for-bit.
+h5py==3.13.0
+numpy==1.24.2
+pandas==1.5.3
+scipy==1.15.2
+scikit-learn==1.6.1
+xgboost==3.2.0
+matplotlib==3.7.1
+# CPU wheel (torch==2.14.0+cpu here; the default PyPI Windows wheel is CPU-only).
+torch==2.14.0
+# headless execution of the final notebook:
+nbformat==5.10.4
+nbclient==0.10.2
+ipykernel==6.29.5
