@@ -1,0 +1,127 @@
+{
+ "assumed_bg_hours_testing": 286.5,
+ "drift_scenarios": [
+  1.19,
+  1.34
+ ],
+ "pool_b": {
+  "bg_hours": 129.50166666666675,
+  "n_bg_peaks": 3367
+ },
+ "buckets": {
+  "low": {
+   "thr": 6.047029495239258,
+   "target_fa": 24.0,
+   "fa_expected": 21.826240859169406,
+   "fa_poisson_ci": [
+    11.621554021875124,
+    35.193277234728804
+   ],
+   "thr_boot_ci": [
+    5.751436710357666,
+    6.26647424697876
+   ],
+   "drift_ratio": 0.758903092584384,
+   "pool_b_rate_h": 0.10038480843232385,
+   "testing_rows": 300,
+   "rows_per_run": 1.0,
+   "recall_val_exact": 0.15058324496288442,
+   "recall_val_center": 0.13679745493107104,
+   "recall_val_emax": 0.15270413573700956,
+   "fa_model2": 18.18181818181818,
+   "drift_measured": 0.758903092584384,
+   "drift_scenarios": [
+    0.758903092584384,
+    1.34
+   ],
+   "fa_worst_case": 62.14099264497712,
+   "safe_thr": 6.477710723876953,
+   "safe_stats": {
+    "testing_rows": 204,
+    "rows_per_run": 0.68,
+    "recall_val_exact": 0.1283138918345705,
+    "fa_at_worst": 34.59097850920398,
+    "margin_point": {
+     "thr": 6.56658935546875,
+     "testing_rows": 192,
+     "recall_val_exact": 0.12407211028632026,
+     "fa_at_worst": 30.36137224777722
+    }
+   }
+  },
+  "mid": {
+   "thr": 5.74924373626709,
+   "target_fa": 49.0,
+   "fa_expected": 48.27488423719893,
+   "fa_poisson_ci": [
+    31.240959732577295,
+    68.9560330975005
+   ],
+   "thr_boot_ci": [
+    5.558385372161865,
+    5.852659225463867
+   ],
+   "drift_ratio": 0.8728346201546473,
+   "pool_b_rate_h": 0.1930477085236997,
+   "testing_rows": 413,
+   "rows_per_run": 1.3766666666666667,
+   "recall_val_exact": 0.17815482502651114,
+   "recall_val_center": 0.15800636267232238,
+   "recall_val_emax": 0.18027571580063625,
+   "fa_model2": 39.20886075949367,
+   "drift_measured": 0.8728346201546473,
+   "drift_scenarios": [
+    0.8728346201546473,
+    1.34
+   ],
+   "fa_worst_case": 105.86322106962166,
+   "safe_thr": 5.988041877746582,
+   "safe_stats": {
+    "testing_rows": 324,
+    "rows_per_run": 1.08,
+    "recall_val_exact": 0.1537645811240721,
+    "fa_at_worst": 69.63540066318754,
+    "margin_point": {
+     "thr": 6.002292633056641,
+     "testing_rows": 316,
+     "recall_val_exact": 0.1537645811240721,
+     "fa_at_worst": 65.90240509342506
+    }
+   }
+  },
+  "high": {
+   "thr": 5.279627323150635,
+   "target_fa": 200.0,
+   "fa_expected": 195.8122513685107,
+   "fa_poisson_ci": [
+    154.53196661831694,
+    241.90526765882026
+   ],
+   "thr_boot_ci": [
+    5.165363311767578,
+    5.365742516517639
+   ],
+   "drift_ratio": 1.1494758915697483,
+   "pool_b_rate_h": 0.594586942252995,
+   "testing_rows": 747,
+   "rows_per_run": 2.49,
+   "recall_val_exact": 0.22375397667020147,
+   "recall_val_center": 0.19936373276776245,
+   "recall_val_emax": 0.22799575821845175,
+   "fa_model2": 130.8110599078341,
+   "drift_measured": 1.1494758915697483,
+   "drift_scenarios": [
+    1.1494758915697483,
+    1.34
+   ],
+   "fa_worst_case": 282.0007457660978,
+   "safe_thr": 5.279627323150635
+  }
+ },
+ "wide": {
+  "thr": 2.159296751022339,
+  "testing_rows": 7652,
+  "rows_per_run": 25.506666666666668,
+  "fa_expected_note": "wide file is NOT bucket-compliant; fallback only if portal sweeps metric_1"
+ }
+}

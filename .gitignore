@@ -7,6 +7,7 @@ _scratch/*.pkl
 _scratch/*.log
 _scratch/*.hold
 _scratch/nb_outputs*.txt
+*.pdf
 
 # --- python ---
 __pycache__/
