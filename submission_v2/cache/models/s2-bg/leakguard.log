@@ -1,0 +1,5 @@
+LEAKGUARD s2 train fold0: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2 train fold1: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2 train fold2: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2 train fold3: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2 train fold4: n=240 lockbox-overlap=0 OK

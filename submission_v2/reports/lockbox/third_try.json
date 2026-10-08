@@ -1,0 +1,18 @@
+{
+ "tryname": "third_try",
+ "model": "s2-spd",
+ "thr": 0.8536,
+ "d": 0.2402,
+ "c": 0.215,
+ "id": 0.1464,
+ "fpr": 0.073,
+ "rows": 683,
+ "md5": "c04e558df82940c3881b2f34e8de04bf",
+ "note": "USER-CONFIRMED identity 2026-10-06; row from leaderboard.html fetched 23:32 (<participant-B>, 2026-10-06T19:24:05). Integer fit: FP 21 = Ind1+Med1+NORM2+NM17 (exact partition, unique per-category candidates, den 287.77 h); TP 662; N_enc unique fit 2756 (#2 fit 2763; 7-encounter cross-row inconsistency disclosed in portal_results.md). Retention vs dev OOF @.085 (d 0.4481): 0.536 [0.491,0.585]; c 0.498, id 0.493; inflation 0.881 [0.503,1.259]. vs second_try (c64s .2530@.0973): d -0.0128 = ~1.1 sigma, fpr -0.0243 = ~1.0 sigma -> statistically indistinguishable. Leaderboard low_false_alarms by d: 4th (<participant-A> .3662, <participant-C> .2979, second_try .2530, third_try .2402; lowest fpr of the four). Not used for any selection.",
+ "per_category": {
+  "Industrial": {"d": 0.2713, "c": 0.2254, "id": 0.2144, "fpr": 0.0035},
+  "Medical": {"d": 0.1533, "c": 0.0842, "id": 0.0778, "fpr": 0.0035},
+  "NORM": {"d": 0.0088, "c": 0.0088, "id": 0.0088, "fpr": 0.0069},
+  "NuclearMaterial": {"d": 0.2898, "c": 0.2797, "id": 0.1666, "fpr": 0.0591}
+ }
+}

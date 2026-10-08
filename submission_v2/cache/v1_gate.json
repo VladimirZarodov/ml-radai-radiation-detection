@@ -1,0 +1,9 @@
+{
+ "runs": 300,
+ "max_bestA_diff": 0.0,
+ "max_mx31_diff": 0.0,
+ "max_am_diff": 0,
+ "spec_mismatch": 0,
+ "detail": [],
+ "secs": 96.04465579986572
+}

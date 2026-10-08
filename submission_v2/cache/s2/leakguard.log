@@ -1,0 +1,46 @@
+LEAKGUARD s2_step0: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-0: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-0: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-thin: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-bg: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-all: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_metrics c64s: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_metrics s2-0: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_metrics s2-0: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-spd: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-thin: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-bg: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-all: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-spd: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-thin: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-bg: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-all: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_metrics s2-0: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-spd: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-spd: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-spd: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-thin: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-thin: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-thin: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-bg: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-bg: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-all: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-bg: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_build s2-all: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-bg: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-all: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_metrics s2-0: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-spd: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_metrics s2-spd: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-thin: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_metrics s2-thin: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_metrics s2-bg: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_gates s2-all: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_metrics c64s: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_lockbox dry-run pool: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_lockbox dry-run pool: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_lockbox dry-run pool: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_lockbox dry-run pool: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_lockbox dry-run pool: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_lockbox dry-run pool: n=240 lockbox-overlap=0 OK
+LEAKGUARD s2_lockbox dry-run pool: n=240 lockbox-overlap=0 OK
