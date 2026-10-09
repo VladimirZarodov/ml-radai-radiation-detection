@@ -1,0 +1,20 @@
+{
+ "n_runs": 100,
+ "n_encounters": 943,
+ "total_run_hours": 100.63862382583328,
+ "sum_window_hours": 5.0975,
+ "width_s_mean": 19.460233297985155,
+ "width_s_med": 14.0,
+ "width_s_p90": 38.0,
+ "width_s_max": 98.0,
+ "over160": 0,
+ "overlap_violations": 0,
+ "start_minus_ca_s_med": -5.202,
+ "stop_minus_ca_s_med": 7.677,
+ "per_category": {
+  "NORM": 93,
+  "Medical": 110,
+  "Industrial": 118,
+  "NuclearMaterial": 622
+ }
+}

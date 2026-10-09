@@ -1,15 +1,43 @@
-# --- data & regenerable artifacts (the notebook rebuilds all of these from the .h5) ---
+# --- science data (72 GB, never in git) ---
 training_v4.3.h5
+developer_v4.3.h5
+testing_v4.3.h5
 *.h5
-*.hdf5
-radai/
-_scratch/*.pkl
-_scratch/*.log
-_scratch/*.hold
-_scratch/nb_outputs*.txt
 
-# --- python ---
+# --- regenerable artifacts ---
+radai/
+_scratch/*
+out/
+submission_v2/logs/
+*.pkl
+*.npz
+*.pt
+*.log
+*.pdf
+*.docx
+*.html
+
+# --- frozen evidence that MUST be tracked despite the patterns above ---
+!_scratch/sub_val_answerkey.csv
+!_scratch/sub_val_answerkey_stats.json
+!_scratch/sub_val_answerkey_stats.histcheck.npy
+!_scratch/sub_validation_alarms.pkl
+!_scratch/sub_training_scores.pkl
+!submission_v2/cache/v1_alarms_train.pkl
+!submission_v2/reports/lockbox/*/*.pkl
+!submission_v2/reports/lockbox/*/*.npz
+!submission_v2/cache/oof/c64s/*.npz
+!submission_v2/cache/oof/s2-spd/*.npz
+!models/*/*.pt
+!submission_v2/cache/test_gate.log
+!submission_v2/cache/models/**/leakguard.log
+!submission_v2/cache/s2/leakguard.log
+
+# --- python / editors / OS ---
 __pycache__/
-*.pyc
+*.py[cod]
 .venv/
 .ipynb_checkpoints/
+Thumbs.db
+Desktop.ini
+.DS_Store

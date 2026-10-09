@@ -1,0 +1,17 @@
+LEAKGUARD train fold0: n=267 lockbox-overlap=0 OK
+LEAKGUARD inner-train fold0: n=156 lockbox-overlap=0 OK
+LEAKGUARD train fold1: n=269 lockbox-overlap=0 OK
+LEAKGUARD inner-train fold1: n=162 lockbox-overlap=0 OK
+LEAKGUARD train fold1: n=269 lockbox-overlap=0 OK
+LEAKGUARD inner-train fold1: n=162 lockbox-overlap=0 OK
+LEAKGUARD train fold2: n=269 lockbox-overlap=0 OK
+LEAKGUARD inner-train fold2: n=165 lockbox-overlap=0 OK
+LEAKGUARD train fold3: n=269 lockbox-overlap=0 OK
+LEAKGUARD inner-train fold3: n=167 lockbox-overlap=0 OK
+LEAKGUARD train fold4: n=269 lockbox-overlap=0 OK
+LEAKGUARD inner-train fold4: n=167 lockbox-overlap=0 OK
+LEAKGUARD eval fold0 dev-runs: n=57 lockbox-overlap=0 OK
+LEAKGUARD eval fold1 dev-runs: n=49 lockbox-overlap=0 OK
+LEAKGUARD eval fold2 dev-runs: n=46 lockbox-overlap=0 OK
+LEAKGUARD eval fold3 dev-runs: n=44 lockbox-overlap=0 OK
+LEAKGUARD eval fold4 dev-runs: n=44 lockbox-overlap=0 OK
